@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد كلمات المرور</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مولد كلمات المرور (بللم)</h1>
+        
+        <!-- خيارات تخصيص كلمة المرور -->
+        <div class="options">
+            <label for="length">طول كلمة المرور:</label>
+            <input type="number" id="length" min="8" max="16" value="12">
+            
+            <label for="uppercase">استخدام الحروف الكبيرة:</label>
+            <input type="checkbox" id="uppercase">
+            
+            <label for="numbers">استخدام الأرقام:</label>
+            <input type="checkbox" id="numbers">
+            
+            <label for="symbols">استخدام الرموز الخاصة:</label>
+            <input type="checkbox" id="symbols">
+        </div>
+
+        <!-- كلمة المرور المولدة -->
+        <div class="password-display">
+            <input type="text" id="password" readonly>
+            <button id="copy-btn"><i class="fas fa-copy"></i> نسخ</button>
+        </div>
+
+        <!-- زر توليد كلمة مرور جديدة -->
+        <button id="generate-btn"> <i class="fas fa-random"></i> توليد كلمة مرور جديدة</button>
+
+        <!-- مؤشر قوة كلمة المرور -->
+        <div id="strength-indicator">قوة كلمة المرور: ضعيفة</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* خلفية متدرجة جميلة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px; /* زيادة المسافة بين العنوان والعناصر */
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل على النص */
+}
+
+.options {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+input[type="number"],
+input[type="checkbox"] {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50; /* تغيير اللون عند التركيز */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.password-display {
+    margin-bottom: 25px;
+}
+
+#password {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+#password:focus {
+    background-color: #e0f7e0; /* تغيير الخلفية عند التركيز */
+    outline: none;
+}
+
+button {
+    padding: 14px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px; /* زيادة المسافة بين العناصر */
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #888;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button i {
+    margin-right: 10px;
+    color: #ca0404;
+    font-size: 22PX;
+}
+
+#strength-indicator {
+    margin-top: 30px; /* زيادة المسافة بين الزر ومؤشر القوة */
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 25px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="number"],
+    input[type="checkbox"] {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+}
